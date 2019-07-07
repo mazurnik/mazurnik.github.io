@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Владинатор</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Владинатор</h1>
+
+    <p>Котик, тебе нужно выбрать случайное число от 1 до 100. 
+        Посмотрим, сможешь ли ты угадать его за 10 ходов или меньше. 
+        После ввода чилс тебе будет дана подсказка - больше или меньше. У тебя 10 попыток, удачи!</p>
+
+    <div class="form">
+      <label for="guessField">Введи число: </label><input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Проверить" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="main.js">
+      // Your JavaScript goes here
+    </script>
+  </body>
+</html>
