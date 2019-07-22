@@ -20,7 +20,7 @@ function checkGuess() {
     guesses.textContent += userGuess + ' ';
    
     if (userGuess === randomNumber) {
-      lastResult.textContent = 'Поздравляю! с меня массаж!!';
+      lastResult.textContent = 'Поздравляю! Вы выиграли!';
       lastResult.style.backgroundColor = 'green';
       lowOrHi.textContent = '';
       setGameOver();
@@ -28,7 +28,7 @@ function checkGuess() {
       lastResult.textContent = '!!!GAME OVER!!!';
       setGameOver();
     } else {
-      lastResult.textContent = 'Wrong!';
+      lastResult.textContent = 'не правильно!';
       lastResult.style.backgroundColor = 'red';
       if(userGuess < randomNumber) {
         lowOrHi.textContent = 'Слишком мало!';
