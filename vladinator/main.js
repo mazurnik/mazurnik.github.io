@@ -15,7 +15,7 @@ guessField.focus();
 function checkGuess() {
     var userGuess = Number(guessField.value);
     if (guessCount === 1) {
-      guesses.textContent = 'Previous guesses: ';
+      guesses.textContent = 'Предыдущая попытка: ';
     }
     guesses.textContent += userGuess + ' ';
    
